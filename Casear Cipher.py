@@ -39,9 +39,13 @@ def correct_caesar_cipher(s):
                 q+=10
                 
             if len(t1)==2:
-                q2=['is','am','up','in', 'an', 'on','it','hi','by']
-                if t1 in q2:
-                    q+=20
+                j=0
+                t2=list(t1.lower())
+                for z0 in t2:
+                    if z0 in m1:
+                        j+=1
+                if j==1:
+                    q+=10
           
             if len(t1)==3:
                 t2=list(t1.lower())
